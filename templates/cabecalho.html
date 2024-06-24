@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/universal.css' %}">
+    <title>Site Portifólio</title>
+</head>
+<body>
+    <div class='conteiner'>
+        <header class="cabecalho">
+            <a href="{% url 'index' %}"><h3 class="nome-cabecalho">Guilherme Dutra</h3></a>
+            <ul class="abas">
+                <a href="{% url 'index' %}"><li class="text-cabecalho text-home">Home</li></a>
+                <img src="{% static '/imagens/pag-cabecalho/Line 4.svg' %}" alt="" class="linha-cabecalho">
+                <a href="{% url 'portifolio' %}"><li class="text-cabecalho text-portifolio">Portifólio</li></a>
+                <img src="{% static '/imagens/pag-cabecalho/Line 4.svg' %}" alt="" class="linha-cabecalho">
+                <a href="{% url 'certificado' %}"><li class="text-cabecalho text-certificado">Certificado</li></a>
+            </ul>
+        </header>
+        <div class="apoio">
+            <p>.</p>
+        </div>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

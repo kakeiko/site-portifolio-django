@@ -1,0 +1,17 @@
+.area-certificados{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2em 0 2em 2em;
+    width: 93vw;
+}
+.imagem-certificado{
+    width: 350px;
+    margin: 1em;  
+    border-radius: 20px; 
+}
+.imagem-certificado:hover{
+    transform: scale(130%);
+    transition: .5s;
+}

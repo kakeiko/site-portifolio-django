@@ -1,0 +1,74 @@
+{% extends 'cabecalho.html' %}
+{% load static %}
+{% block content %}
+    
+<link rel="stylesheet" href="{% static '/css/portifolio/activate.css' %}">
+    <div class="pag-portifolio">
+        <section class="area-filtros">
+            <div class="ordem">
+                <h2 class="titulo-ordem">Ordenar por:</h2>
+                <div class="area-ordem">
+                    <a href="{% url 'ordem' 'nota' %}" class="opcoes-ordem">Melhores</a>
+                    <a href="{% url 'ordem' 'data_postagem' %}" class="opcoes-ordem">Lançamento</a>
+                </div>
+            </div>
+            <div class="filtro">
+                <h2 class="titulo-filtro">Filtrar por:</h2>
+                <div class="area-filtro">
+                    <a href="{% url 'filtro' 'Python' %}" class="opcoes-filtro">Python</a>
+                    <a href="{% url 'filtro' 'Django' %}" class="opcoes-filtro">Django</a>
+                    <a href="{% url 'filtro' 'React' %}" class="opcoes-filtro">React</a>
+                    <a href="{% url 'filtro' 'Golang' %}" class="opcoes-filtro">Golang</a>
+                    <a href="{% url 'filtro' 'JavaScript' %}" class="opcoes-filtro">JavaScript</a>
+                    <a href="{% url 'portifolio' %}" class="opcoes-filtro">Sem filtro</a>
+                </div>
+            </div>
+            <img src="{% static '/imagens/pag-portifolio/parte-filtros/Line 1.svg' %}" alt="" class="linha-1">
+        </section>
+        <section class="projetos">
+            {% if cards %}
+            {% for projeto in cards %}
+            <button class="btn-projeto" id="btn-modal-abrir-{{projeto.id}}">
+                <div class="template-projeto">
+                    <img src="{{ projeto.imagem.url }}" alt="" class="imagem-projeto">
+                    <div class="text-projetos">
+                        <h3 class="titulo-projetos">Título:</h3>
+                        <p class="nome-projeto">{{projeto.titulo}}</p>
+                    </div>
+                    <div class="area-categoria">
+                        <p class="categoria-projeto">{{projeto.tipo}}</p>
+                    </div>
+                </div>
+            </button>
+            <dialog class="modal-projeto" id="janela-modal-{{projeto.id}}">
+                <div class="modal-todo">
+                    <div class="btns-modal">
+                        <button class="btn-fechar" id="btn-modal-fechar-{{projeto.id}}">X</button>
+                    </div>
+                    <img src="{{ projeto.imagem.url }}" alt="" class="imagem-projeto">
+                    <div class="links-modal">
+                        <a href="{{ projeto.linkgit }}" class="modal-git" target="_blank">Ver o código</a>
+                        <a href="{{ projeto.linksite }}" class="modal-site" target="_blank">Ver o site ou vídeo</a>
+                    </div>
+                </div>
+            </dialog>
+            <script>
+                const modal_{{projeto.id}} = document.getElementById('janela-modal-{{projeto.id}}')
+                const btn_open_{{projeto.id}} = document.getElementById('btn-modal-abrir-{{projeto.id}}')
+                const btn_close_{{projeto.id}} = document.getElementById('btn-modal-fechar-{{projeto.id}}')
+        
+                btn_open_{{projeto.id}}.onclick = function() {
+                    modal_{{projeto.id}}.showModal()
+                }
+                btn_close_{{projeto.id}}.onclick = function() {
+                    modal_{{projeto.id}}.close()
+                }
+            </script>
+            {% endfor %}
+            {% else %}
+            <p>n tem nd</p>
+            {% endif %}
+        </section>
+    </div>
+    
+{% endblock %}

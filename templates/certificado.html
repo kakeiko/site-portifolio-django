@@ -1,0 +1,38 @@
+{% extends 'cabecalho.html' %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static '/css/certificado/activate.css' %}">
+    <div class="pag-certificado">
+        <section class="area-filtros-cert">
+            <form action="" method="GET" class="formulario">
+                <div class="filtro-cert">
+                    <!-- <label for="formulario" class="categoria">Categoria:</label>
+                    <select class="inp-categoria">
+                        <option value="Programação" class="opcao">Programação</option>
+                        <option value="Front-end" class="opcao">Front-end</option>
+                        <option value="Ux-designer" class="opcao">Ux designer</option>
+                    </select> -->
+                    {{filtro.form.as_p}}
+                </div>
+                <div class="btn-cert">
+                    <button class="btn-filtrar">Filtrar</button>
+                </div>
+            </form>
+        </section>
+        <img src="{% static '/imagens/pag-certificado/parte-filtro/Line 1.svg' %}" alt="" class="linha-1">
+        <section class="area-certificados">
+            {% if cards %}
+            {% for certificado in cards %}
+            <div class="parte-certificado">
+                <img src="{{ certificado.foto.url }}" alt="" class="imagem-certificado">
+            </div>
+            {% endfor %}
+            {% else %}
+                <p>n tem nd aq</p>
+            
+            {% endif %}
+            
+        </section>
+    </div>
+{% endblock %}

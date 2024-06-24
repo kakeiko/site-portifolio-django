@@ -1,0 +1,53 @@
+.pag-skills{
+    height: 100vh;
+    background-color: var(--cor-fundo);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.educacao, .tec, .skills{
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo-educacao, .titulo-tec, .titulo-skills{
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 32px;
+    font-weight: 500;
+}
+.img-educacao, .img-tec, .img-skills{
+    width: 60px;
+    margin: 2em 0;
+}
+.conteudo-educacao, .conteudo-tec, .conteudo-skills{
+    width: 220px;
+    list-style: none;
+}
+.text-educacao, .text-tec, .text-skills{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 300;
+    margin: 1em 0;
+    text-align: center;
+}
+.katana-1, .katana-2{
+    position: absolute;
+    width: 600px;
+    top: 1590px;
+}
+.katana-1{
+    transform: rotate(-90deg);
+    right: 500px;
+}
+.katana-2{
+    transform: rotate(90deg);
+    left: 500px;   
+}
+.linha-img2{
+    position: absolute;
+    width: 1050px;
+    top: 1980px;
+  }
