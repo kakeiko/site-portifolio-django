@@ -21,5 +21,6 @@ def filtroPortifolio(request, categoria):
     return render(request, 'portifolio.html', {'cards': projeto})
 
 def ordemPortifolio(request, ordem):
+    ordem = '-' + ordem
     projeto = ProjetosBd.objects.order_by(ordem)
     return render(request, 'portifolio.html', {'cards': projeto})
