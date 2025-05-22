@@ -1,38 +1,44 @@
-.modal-projeto{
-    background-color: var(--cor-linha);
-    border: 1px solid var(--cor-linha);
-    border-radius: 20px;
-    
+.modal-projeto {
+  background-color: var(--cor-linha);
+  border: 1px solid var(--cor-linha);
+  border-radius: 20px;
 }
-.modal-projeto::backdrop{
-    background-color: rgb(0 0 0 / .5);
+
+.modal-projeto::backdrop {
+  background-color: rgb(0 0 0 / 0.5);
 }
-.modal-todo{
-    display: flex;
-    flex-direction: column;
+
+.modal-todo {
+  display: flex;
+  flex-direction: column;
 }
-.btns-modal{
-    text-align: end;
+
+.btns-modal {
+  text-align: end;
 }
-.btn-fechar{
-    color: var(--cor-principal);
-    font-family: var(--fonte-principal);
-    font-size: 20px;
-    font-weight: 900;
-    background-color: var(--cor-linha);
-    border: 0px;
-    cursor: pointer;
-    margin-bottom: .7em;
+
+.btn-fechar {
+  color: var(--cor-principal);
+  font-family: var(--fonte-principal);
+  font-size: 20px;
+  font-weight: 900;
+  background-color: var(--cor-linha);
+  border: 0px;
+  cursor: pointer;
+  margin-bottom: 0.7em;
 }
-.links-modal{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1em;
+
+.links-modal {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
 }
-.modal-git, .modal-site{
-    background-color: var(--cor-principal);
-    color: var(--cor-fundo);
-    font-family: var(--fonte-principal);
-    border-radius: 5px;
-    padding: 5px 8px;
+
+.modal-git,
+.modal-site {
+  background-color: var(--cor-principal);
+  color: var(--cor-fundo);
+  font-family: var(--fonte-principal);
+  border-radius: 5px;
+  padding: 5px 8px;
 }

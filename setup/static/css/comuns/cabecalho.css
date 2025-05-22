@@ -42,3 +42,32 @@
 body{
     background: var(--cor-fundo);
 }
+
+/* @media screen and (max-width: 450px) {
+    .cabecalho{
+        background-color: var(--cor-linha);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100vw;
+        height: 25px;
+    }
+    .nome-cabecalho{
+        color: var(--cor-principal);
+        margin: 0 1em;
+        font-family: var(--fonte-principal);
+        font-size: 12px;
+    }
+    .text-cabecalho{
+        color: var(--cor-secundaria);
+        margin: 0 1em;
+        font-family: var(--fonte-principal);
+        font-size: 10px;
+    }
+    .apoio{
+        width: 90vw;
+        height: 25px;
+        background-color: var(--cor-fundo);
+    }
+} */

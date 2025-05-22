@@ -1,87 +1,163 @@
-.pag-contatos{
-    height: 100vh;
-    background-color: var(--cor-fundo);
+.pag-contatos {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  background-color: var(--cor-fundo);
 }
-.pro-cert{
-    display: flex;
-    justify-content: space-around;
+
+.pro-cert {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-.projeto, .certificado{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+
+.pro-cert-nlinha {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.titulo-projeto, .titulo-certificado{
-    color: var(--cor-principal);
-    font-family: var(--fonte-principal);
-    font-size: 32px;
-    font-weight: 500;
-    margin: 2em 0 1em 0;
+
+.projeto,
+.certificado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.img-projeto, .img-certificado{
-    width: 60px;
+
+.titulo-projeto,
+.titulo-certificado {
+  color: var(--cor-principal);
+  font-family: var(--fonte-principal);
+  font-size: 48px;
+  font-weight: 500;
+  margin: 2em 0 1em 0;
 }
-.adaga-1, .adaga-2{
-    width: 300px;
-    position: absolute;
-    top:2000px;
+
+.img-projeto,
+.img-certificado {
+  width: 120px;
 }
-.adaga-1{
-    transform: rotate(45deg);
+
+.adaga-1 {
+  width: 300px;
 }
-.adaga-2{
-    transform: rotate(-45deg);
+
+.contatos {
+  margin: 10em 0;
+  display: flex;
+  justify-content: space-around;
 }
-.contatos{
-    margin: 10em 0;
-    display: flex;
-    justify-content: space-around;
+
+.titulo-contatos {
+  color: var(--cor-principal);
+  font-family: var(--fonte-principal);
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0 0 1em 0;
 }
-.titulo-contatos{
-    color: var(--cor-principal);
-    font-family: var(--fonte-principal);
-    font-size: 32px;
-    font-weight: 500;
-    margin: 0 0 1em 0;
+
+.imgs-conts {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
 }
-.imgs-conts{
-    display: flex;
-    justify-content: space-around;
+
+.img-contatos-1,
+.img-contatos-2 {
+  width: 50px;
 }
-.img-contatos-1, .img-contatos-2{
-    width: 50px;
+
+.frase {
+  margin-top: 1em;
+  width: 500px;
 }
-.aspas-1, .aspas-2, .skull{
-    position: absolute;
+
+.text-frase {
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-principal);
+  font-size: 24px;
+  font-weight: 300;
 }
-.frase{
-    margin-top: 1em;
-    width: 370px;
+
+.skull {
+  margin-left: 237px;
+  width: 500px;
 }
-.text-frase{
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 300;
+
+.aspas-1 {
+  width: 30px;
+  margin-bottom: 10px;
 }
-.skull{
-    width: 350px;
-    left: 874px;
-    top: 2344px;
+
+.aspas-2 {
+  margin-left: 500px;
+  width: 30px;
 }
-.aspas-1{
-    left: 670px;
-    top: 2340px;
-    width: 30px;
+
+.linha-img3 {
+  margin: 50px 0;
+  width: 95%;
 }
-.aspas-2{
-    left: 1020px;
-    top: 2420px;
-    width: 30px;
-}
-.linha-img3{
-    position: absolute;
-    width: 1050px;
-    top: 2310px;
-}
+
+/* @media screen and (max-width: 450px) {
+    .pag-contatos{
+        height: auto;
+        width: 100vw;
+        background-color: var(--cor-fundo);
+    }
+    .titulo-projeto, .titulo-certificado{
+        color: var(--cor-principal);
+        font-family: var(--fonte-principal);
+        font-size: 16px;
+        font-weight: 500;
+        margin: 2em 0 1em .5em;
+    }
+    .img-projeto, .img-certificado{
+        width: 30px;
+    }
+    .adaga-1, .adaga-2{
+        display: none;
+    }
+    .contatos{
+        margin: 5em 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .titulo-contatos{
+        color: var(--cor-principal);
+        font-family: var(--fonte-principal);
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0 0 1em 1em;
+    }
+    .img-contatos-1, .img-contatos-2{
+        width: 25px;
+    }
+    .text-frase{
+        color: var(--cor-secundaria);
+        font-family: var(--fonte-principal);
+        font-size: 8px;
+        font-weight: 300;
+        margin: 0 5em 0 15em;
+    }
+    .aspas-1{
+        left: 230px;
+        top: 2430px;
+        width: 15px;
+    }
+    .aspas-2{
+        left: 320px;
+        top: 2480px;
+        width: 15px;
+    }
+    .skull{
+        width: 175px;
+        left: 250px;
+        top: 2470px;
+    }
+    .linha-img3{
+        display: none;
+    }
+} */

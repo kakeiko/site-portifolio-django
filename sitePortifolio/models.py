@@ -6,7 +6,10 @@ OPCOES_TIPO = [
     ('Django','Django'),
     ('React','React'),
     ('Golang','Golang'),
+    ('C#','C#'),
+    ('Java','Java'),
     ('JavaScript','JavaScript'),
+    ('Flutter', 'Flutter')
 ]
 OPCOES_AREA = [
     ('Programação','Programação'),
@@ -14,6 +17,8 @@ OPCOES_AREA = [
     ('Ux-designer','Ux-designer'),
     ('Devops','Devops'),
     ('Banco-de-dados','Banco de dados'),
+    ('CyberSegurity','CyberSegurity'),
+    ('Mobile','Mobile')
 ]
 
 class ProjetosBd(models.Model):
