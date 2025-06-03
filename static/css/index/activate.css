@@ -1,0 +1,12 @@
+.text-home{
+    color: var(--cor-principal);
+    margin: 0 1em;
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+}
+
+/* @media screen and (max-width: 450px) {
+    .text-home{
+        font-size: 10px
+    }
+} */

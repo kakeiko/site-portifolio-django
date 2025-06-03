@@ -22,7 +22,7 @@ OPCOES_AREA = [
 ]
 
 class ProjetosBd(models.Model):
-    imagem_url = models.URLField(verbose_name="URL da imagem (Imgur)")
+    imagem_url = models.URLField(verbose_name="URL da imagem (Imgur)", blank=True, null=True)
     titulo = models.CharField(max_length=100, blank=False, null=False)
     tipo = models.CharField(max_length=100, blank=False, null=False, choices=OPCOES_TIPO)
     nota = models.IntegerField(blank=False, null=False)
@@ -31,5 +31,5 @@ class ProjetosBd(models.Model):
     linksite = models.CharField(max_length=100, blank=False, null=False, default='qualquercoisa')
 
 class CertificadosBd(models.Model):
-    imagem_url = models.URLField(verbose_name="URL da imagem (Imgur)")
+    imagem_url = models.URLField(verbose_name="URL da imagem (Imgur)", blank=True, null=True)
     categoria = models.CharField(choices=OPCOES_AREA, blank=False, null=False, max_length=100)

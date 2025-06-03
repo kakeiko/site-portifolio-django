@@ -1,0 +1,53 @@
+.pag-inicial {
+  width: 100%;
+  background: var(--cor-fundo)
+    url(../../imagens/pag-home/pag1/blood-background\ 1.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.objetos-inicial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-eu {
+  width: 300px;
+  border-radius: 999px;
+  margin: 1rem;
+}
+
+.titulo-nome {
+  color: var(--cor-principal);
+  font-family: var(--fonte-principal);
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0.5rem;
+}
+
+.categoria-nome {
+  color: var(--cor-secundaria);
+  font-size: 24px;
+  font-weight: 300;
+  font-family: var(--fonte-principal);
+}
+
+/* @media screen and (max-width: 450px) {
+    body{
+      width: 100vw;
+    }
+    .pag-inicial{
+      background: var(--cor-fundo) url(../../imagens/pag-home/pag1/blood-background\ 1.svg) no-repeat;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  } */

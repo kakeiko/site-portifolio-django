@@ -1,0 +1,6 @@
+.text-certificado{
+    color: var(--cor-principal);
+    margin: 0 1em;
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+}
