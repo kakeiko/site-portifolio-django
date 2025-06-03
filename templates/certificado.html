@@ -20,7 +20,11 @@
   <section class="area-certificados">
     {% if cards %} {% for certificado in cards %}
     <div class="parte-certificado">
-      <img src="{{ certificado.foto.url }}" alt="" class="imagem-certificado" />
+      <img
+        src="{{ certificado.imagem_url }}"
+        alt=""
+        class="imagem-certificado"
+      />
     </div>
     {% endfor %} {% else %}
     <p>n tem nd aq</p>
