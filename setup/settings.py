@@ -66,17 +66,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'setup.wsgi.application'
-
-if os.getenv("CREATE_SUPERUSER") == "1":
-    from django.contrib.auth import get_user_model
-    User = get_user_model()
-    if not User.objects.filter(username=os.getenv("DJANGO_SUPERUSER_USERNAME")).exists():
-        User.objects.create_superuser(
-            username=os.getenv("DJANGO_SUPERUSER_USERNAME"),
-            email=os.getenv("DJANGO_SUPERUSER_EMAIL"),
-            password=os.getenv("DJANGO_SUPERUSER_PASSWORD")
-        )
-
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
