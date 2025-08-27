@@ -33,7 +33,8 @@ INSTALLED_APPS = [
     'sitePortifolio',
     'whitenoise.runserver_nostatic',
     'cloudinary',
-    'cloudinary_storage',
+    'cloudinary_storage'
+    'core',
 ]
 
 MIDDLEWARE = [
