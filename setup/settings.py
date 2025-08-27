@@ -32,8 +32,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'sitePortifolio',
     'whitenoise.runserver_nostatic',
-    'cloudinary',
-    'cloudinary_storage'
     'core',
 ]
 
